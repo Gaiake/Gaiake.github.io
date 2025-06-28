@@ -26,6 +26,12 @@ git push -u origin main  # 输出推送进度和结果
 git clone git@github.com:Gaiake/gaiake.github.io.git
 cd gaiake.github.io
 git add .
-git commit -m "Update index.html" 
+git commit -m "<Update index.html>" 
 git push 
+```
+推送完成后，使用修改pages
+```
+source venv/bin/activate
+mkdocs gh-deploy
+deactivate
 ```

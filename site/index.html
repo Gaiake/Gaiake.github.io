@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mywiki" class="md-skip">
+        <a href="#welcome-to-my-world" class="md-skip">
           Skip to content
         </a>
       
@@ -251,11 +251,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#github-command" class="md-nav__link">
     <span class="md-ellipsis">
-      你怎么就自己关掉了？？？？
+      Github command
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Github command">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-make-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to make changes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to make changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      已有 GitHub 仓库（只需同步代码）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -369,11 +399,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#github-command" class="md-nav__link">
     <span class="md-ellipsis">
-      你怎么就自己关掉了？？？？
+      Github command
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Github command">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-make-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to make changes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to make changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      已有 GitHub 仓库（只需同步代码）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -393,7 +453,7 @@
 
 
 
-<h1 id="welcome-to-mywiki">Welcome to MYWIKI</h1>
+<h1 id="welcome-to-my-world">Welcome to my world!</h1>
 <p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
 <h2 id="commands">Commands</h2>
 <ul>
@@ -402,11 +462,23 @@
 <li><code>mkdocs build</code> - Build the documentation site.</li>
 <li><code>mkdocs -h</code> - Print help message and exit.</li>
 </ul>
-<h2 id="_1">你怎么就自己关掉了？？？？</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+<h2 id="github-command">Github command</h2>
+<h3 id="how-to-make-changes">How to make changes</h3>
+<h4 id="github">已有 GitHub 仓库（只需同步代码）</h4>
+<p>本地已有代码，需推送到现有远程仓库</p>
+<pre><code>cd ~/myproject
+git init   # 执行后无特殊输出，可通过ls -a查看是否生成.git目录
+git add .  # 执行后无输出，或显示新增/修改的文件列表
+git commit -m &quot;&lt;Initial commit&gt;&quot;  # 输出提交摘要
+git remote add origin git@github.com:Gaiake/gaiake.github.io.git
+git push -u origin main  # 输出推送进度和结果
+</code></pre>
+<p>克隆远程仓库到本地，再修改并推送</p>
+<pre><code>git clone git@github.com:Gaiake/gaiake.github.io.git
+cd gaiake.github.io
+git add .
+git commit -m &quot;Update index.html&quot; 
+git push 
 </code></pre>
 
 
