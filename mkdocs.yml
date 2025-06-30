@@ -66,7 +66,7 @@ repo_name: Gaiake # 右上角的名字
 nav:
   - Home: README.md
   - About: 
-      - 个人简介: about.md
+      - What can I say?: about/about.md
   - Academic Courses:
       - 基础课程:
           - Calculus: courses/MA101.md
