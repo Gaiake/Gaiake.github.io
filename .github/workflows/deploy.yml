@@ -1,0 +1,30 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 主分支有提交时触发部署
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # 使用 Ubuntu 环境
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
+          
+      - name: Install dependencies
+        run: |
+          pip install mkdocs mkdocs-material  # 安装 mkdocs 和主题
+          
+      - name: Build and deploy
+        run: |
+          mkdocs gh-deploy --force  # 执行部署，--force 覆盖旧提交
+          
+      - name: Clean up (确保本地不残留)
+        run: |
+          rm -rf site/  # 手动删除可能生成的 site/ 目录
