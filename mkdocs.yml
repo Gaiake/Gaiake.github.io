@@ -72,7 +72,9 @@ nav:
           - Calculus: courses/MA101.md
           - Linear Algebra: courses/MA102.md
           - Probability Theory and Mathematical Statistics: courses/MA103.md
+          - Ordinary Differential Equations: courses/MA104.md
           - Discrete Mathematics and its Applications: courses/CS103.md
+          - Physics: courses/PHY.md
       - 专业课程:
           - Fundamentals of C Programming and Laboratory: courses/CS101.md
           - Fundamentals of Data Structures: courses/CS102.md
