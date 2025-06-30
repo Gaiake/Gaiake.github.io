@@ -8,6 +8,7 @@ theme:
   #   font: #谷歌字体，自行搜索
   #   text: Bitter  #文本字体
   #   code: Roboto Mono  #代码字体
+  custom_dir: docs/overrides  
   logo:  about/image/top.jpg
   favicon: https://s2.loli.net/2024/04/26/PmRdM9iGnvOJHgu.png # 网页icon
   palette: # 主题色配置
@@ -49,7 +50,8 @@ theme:
     - navigation.indexes #启用节索引页后，可以将文档直接附加到节
     - content.tabs.link
     - content.tooltips
-    - content.code.copy #代码复制
+    - content.code.copy #代码复制按钮
+    - content.code.select
     #- content.action.edit
     #- content.action.view
     - content.code.annotate
@@ -248,3 +250,5 @@ extra_css:
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css #字体
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css  #字体
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css  #字体
+hooks:
+  - docs/overrides/hooks/reading_time.py    # 阅读时间统计
